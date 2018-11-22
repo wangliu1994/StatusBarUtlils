@@ -15,7 +15,6 @@ import android.widget.TextView;
 public class StatusBarActivity5 extends AppCompatActivity {
 
     private ViewGroup mRootView;
-    private TextView mTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,16 +23,9 @@ public class StatusBarActivity5 extends AppCompatActivity {
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
 
         mRootView = findViewById(R.id.layout);
-        mTextView = findViewById(R.id.title);
 
-        //1.0 设置内容与底部的边距
-        FrameLayout.LayoutParams params = (FrameLayout.LayoutParams) mRootView.getLayoutParams();
-        if (params == null) {
-            params = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT,
-                    FrameLayout.LayoutParams.MATCH_PARENT);
-        }
-        params.setMargins(params.leftMargin, params.topMargin, params.rightMargin,
-                params.bottomMargin + ScreenUtils.getNavigationBarHeight());
-        mRootView.setLayoutParams(params);
+        mRootView.setPadding(mRootView.getPaddingLeft(),
+                mRootView.getPaddingTop() + ScreenUtils.getStatusBarHeight(),
+                mRootView.getPaddingRight(), mRootView.getPaddingBottom());
     }
 }
