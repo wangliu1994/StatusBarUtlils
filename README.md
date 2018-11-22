@@ -46,3 +46,4 @@
         <item name="android:navigationBarColor">@android:color/transparent</item>
     </style>
 ```
+<img src="image/image3.jpg" width="300">
