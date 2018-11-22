@@ -28,8 +28,16 @@
             android:theme="@style/AppTheme.TranslucentStatus2" />
 
         <activity
+            android:name=".StatusBarActivity4"
+            android:theme="@style/AppTheme.TranslucentStatus2" />
+
+        <activity
             android:name=".StatusBarActivity3"
             android:theme="@style/AppTheme.TranslucentStatus3" />
+
+        <activity
+            android:name=".StatusBarActivity5"
+            android:theme="@style/AppTheme.TranslucentStatus5" />
     </application>
 
 </manifest>

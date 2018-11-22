@@ -47,3 +47,12 @@
     </style>
 ```
 <img src="image/image3.jpg" width="300">
+
+
+# 解决踩的坑
+- 在主题中不设置windowTranslucentNavigation 与 windowTranslucentStatus属性，只设置statusBarColor
+- 在代码中设置 getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
+
+# 总结：
+- 5.0以上手机，如果是图片沉浸式，可以直接使用Activity2的做法，
+- 如果只是想要状态栏透明，而导航栏不透明，使用Activity4（设置头部的内边距） + Activity5（设置Flag）的做法

@@ -27,4 +27,12 @@ public class MainActivity extends AppCompatActivity {
     public void statusBar3(View view) {
         startActivity(new Intent(this, StatusBarActivity3.class));
     }
+
+    public void statusBar4(View view) {
+        startActivity(new Intent(this, StatusBarActivity4.class));
+    }
+
+    public void statusBar5(View view) {
+        startActivity(new Intent(this, StatusBarActivity5.class));
+    }
 }

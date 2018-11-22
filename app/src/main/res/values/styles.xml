@@ -45,4 +45,11 @@
         <item name="android:navigationBarColor">@android:color/transparent</item>
     </style>
 
+    <style name="AppTheme.TranslucentStatus5" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--在主题中设置windowTranslucentNavigation导致导航栏被透明。要去代码中设置-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
 </resources>

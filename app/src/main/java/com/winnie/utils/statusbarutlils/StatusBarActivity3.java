@@ -13,6 +13,6 @@ public class StatusBarActivity3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_status_bar);
+        setContentView(R.layout.activity_status_bar3);
     }
 }

@@ -28,4 +28,18 @@
         android:onClick="statusBar3"
         android:text="虚拟按钮透明" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:onClick="statusBar4"
+        android:text="修复后的StatusBar全透明" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:onClick="statusBar5"
+        android:text="修复后的StatusBar全透明" />
+
 </LinearLayout>
