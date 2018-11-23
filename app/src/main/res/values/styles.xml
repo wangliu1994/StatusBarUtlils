@@ -24,11 +24,12 @@
 
         <!--5.0以上手机-->
         <!--windowTranslucentStatus为false，windowTranslucentNavigation为true才能把状态栏完全透明-->
-        <!--但是windowTranslucentStatus会导致底部虚拟菜单栏也呈现部分透明，即使设置navigationBarColor也无效-->
+        <!--windowTranslucentStatus,如果为true，状态栏就会变成半透明的-->
+        <!--但是windowTranslucentNavigation会导致底部虚拟菜单栏也呈现部分透明，即使设置navigationBarColor也无效-->
         <!--同时布局会占用底部和底部的位置-->
         <item name="android:windowTranslucentStatus">false</item>
         <item name="android:windowTranslucentNavigation">true</item>
-        <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的颜色（colorPrimary）-->
+        <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的颜色（colorPrimaryDark）-->
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 
